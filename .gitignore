@@ -1,0 +1,61 @@
+# ============================================================
+# Go
+# ============================================================
+# Binary output dari go build
+/backend/server
+/backend/*.exe
+
+# Cache Go
+/backend/vendor/
+
+# Test output
+*.test
+*.out
+coverage.html
+
+# ============================================================
+# Node.js / React / Vite
+# ============================================================
+/frontend/node_modules/
+
+# Hasil build Vite — tidak perlu di-commit, di-build ulang di CI
+/frontend/dist/
+
+# Vite cache
+/frontend/.vite/
+
+# Environment files lokal (jangan commit secrets!)
+/frontend/.env
+/frontend/.env.local
+/frontend/.env.*.local
+
+# ============================================================
+# Docker
+# ============================================================
+docker-compose.override.yml
+
+# ============================================================
+# IDE & Editor
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Kubernetes & Secrets
+# ============================================================
+kubeconfig
+kubeconfig.yaml
+*.kubeconfig
+.env
+secrets.yaml
+*-secret.yaml
+
+# ============================================================
+# CI/CD & Tooling
+# ============================================================
+*.log
+.terraform/
